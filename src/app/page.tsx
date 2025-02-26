@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import FreturedProduction from "@/components/FreturedProduction";
 import Hero from "@/components/Hero";
 import React from "react";
 
@@ -7,6 +8,7 @@ const page = () => {
     <div className="">
       <Hero />
       <About />
+      <FreturedProduction />
     </div>
   );
 };

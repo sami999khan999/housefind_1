@@ -6,7 +6,7 @@
   :root {
     --background: 0, 0%, 100%; /* hsl(0, 0%, 90%) */
 
-    --foreground: 180, 12%, 92%; /* hsl(180, 12%, 82%)*/
+    --foreground: 180, 9%, 87%; /* hsl(180, 9%, 87%)*/
 
     --card: 0 0% 100%;
 
@@ -22,9 +22,9 @@
 
     --secondary: 179, 79%, 13%; /* hsl(179, 79%, 13%)*/
 
-    --secondary-foreground: 180, 4%, 95%; /* hsl(180, 4%,80%) */
+    --secondary-foreground: 180, 4%, 95%; /* hsl(180, 4%,75%) */
 
-    --muted: 0 0% 96.1%;
+    --muted: 0, 0%, 22%; /*hsl(0, 0%, 18%) */
 
     --muted-foreground: 0 0% 45.1%;
 

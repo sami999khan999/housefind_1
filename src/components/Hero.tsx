@@ -1,6 +1,5 @@
 "use client";
 
-import { searchParamaData } from "@/lib/data";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { CiSearch } from "react-icons/ci";
@@ -9,14 +8,12 @@ import { RiArrowRightUpFill } from "react-icons/ri";
 import SearchParamSelect from "./SearchParamSelect";
 import Heading from "./shared/Heading";
 import { Button } from "./ui/button";
+import { searchParamaData } from "@/lib/data";
 
 const Hero = () => {
-  // Fetching the search parameters from the URL
   const searchParams = useSearchParams();
   const selectedParam = (searchParams.get("searchSelectedParam") ??
     "forSale") as keyof typeof searchParamaData;
-
-  console.log(searchParamaData[selectedParam]); // Log the current selected search parameter's data
 
   return (
     <div className="bg-hero bg-cover bg-center flex items-center flex-col top-0">

@@ -7,7 +7,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { countries, navDropdownData } from "@/lib/data";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,6 +21,7 @@ import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { IoIosArrowDown, IoMdMail } from "react-icons/io";
 import { Button } from "./ui/button";
 import { RiArrowRightUpFill } from "react-icons/ri";
+import { countries, navDropdownData } from "@/lib/data";
 
 const Navbar = () => {
   // State to manage selected country in dropdown

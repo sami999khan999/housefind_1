@@ -1,3 +1,8 @@
+import { BsBuildings, BsHousesFill } from "react-icons/bs";
+import { FaHouseChimney } from "react-icons/fa6";
+import { LuBuilding2 } from "react-icons/lu";
+import { PiBuildingApartment, PiWarehouseThin } from "react-icons/pi";
+
 export const countries = [
   { name: "US", flag: "/countries/us.png" },
   { name: "CA", flag: "/countries/ca.png" },
@@ -104,3 +109,57 @@ export const aboutDetails = {
   happyClients: "0K",
   satisfactionRate: "0K",
 };
+
+export const FeaturedProductionData = [
+  {
+    name: "For Sale",
+    icon: <FaHouseChimney />,
+    label: "forSale",
+  },
+  {
+    name: "Villas",
+    icon: <PiWarehouseThin />,
+    label: "villas",
+  },
+  {
+    name: "Apartments",
+    icon: <PiBuildingApartment />,
+    label: "apartments",
+  },
+  {
+    name: "Houses",
+    icon: <BsHousesFill />,
+    label: "houses",
+  },
+  {
+    name: "Condos",
+    icon: <LuBuilding2 />,
+    label: "condos",
+  },
+  {
+    name: "Retail",
+    icon: <BsBuildings />,
+    label: "retail",
+  },
+];
+
+export const featuredCardData = [
+  {
+    title: "Luxury Suite Villa",
+    location: "Los Angeles City, CA, USA",
+    price: 49999,
+    facilities: { bed: 12, bath: 16, area: 800 },
+  },
+  {
+    title: "Oceanfront Penthouse",
+    location: "Miami Beach, FL, USA",
+    price: 70000,
+    facilities: { bed: 8, bath: 10, area: 1200 },
+  },
+  {
+    title: "Mountain View Mansion",
+    location: "Aspen, CO, USA",
+    price: 950000,
+    facilities: { bed: 10, bath: 12, area: 1500 },
+  },
+];
