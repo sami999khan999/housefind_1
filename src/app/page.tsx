@@ -1,7 +1,14 @@
+import About from "@/components/About";
+import Hero from "@/components/Hero";
 import React from "react";
 
 const page = () => {
-  return <div className="px-[312px] bg-black">page</div>;
+  return (
+    <div className="">
+      <Hero />
+      <About />
+    </div>
+  );
 };
 
 export default page;

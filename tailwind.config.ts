@@ -59,6 +59,11 @@ export default {
       screens: {
         "1080p": "1920px",
         "640p": "640px",
+        "320p": "320px",
+      },
+      backgroundImage: {
+        hero: "url('/hero-img.png')",
+        about: "url('/about/image-1.png')",
       },
     },
   },

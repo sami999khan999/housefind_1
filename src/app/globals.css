@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --background: 0, 0%, 100%; /* hsl(0, 0%, 100%) */
+    --background: 0, 0%, 100%; /* hsl(0, 0%, 90%) */
 
-    --foreground: 0, 0%, 77%; /* hsl(0, 0%, 77%)*/
+    --foreground: 180, 12%, 92%; /* hsl(180, 12%, 82%)*/
 
     --card: 0 0% 100%;
 
@@ -22,7 +22,7 @@
 
     --secondary: 179, 79%, 13%; /* hsl(179, 79%, 13%)*/
 
-    --secondary-foreground: 180, 9%, 87%; /* hsl(180, 9%, 87%) */
+    --secondary-foreground: 180, 4%, 95%; /* hsl(180, 4%,80%) */
 
     --muted: 0 0% 96.1%;
 
@@ -116,6 +116,10 @@
 
 @layer components {
   .padding-x {
-    @apply 1080p:px-[312px] 640p:px-[140px];
+    @apply 1080p:px-[312px] 640p:px-[100px] 320p:px-[10px];
+  }
+
+  .ceperator {
+    @apply border-[0.25px] border-[#224F4E]/40 h-[22px];
   }
 }

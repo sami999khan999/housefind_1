@@ -5,7 +5,7 @@ export const countries = [
   { name: "IN", flag: "/countries/in.png" },
 ];
 
-export const navDropdown = [
+export const navDropdownData = [
   {
     name: "Home",
     item: [
@@ -55,3 +55,52 @@ export const navDropdown = [
     ],
   },
 ];
+
+export const searchParamaData = {
+  forSale: [
+    {
+      name: "status",
+      value: [{ name: "Available" }, { name: "Sold Out" }, { name: "Pending" }],
+    },
+    {
+      name: "Labels",
+      value: [
+        { name: "Hot Deal" },
+        { name: "New Listing" },
+        { name: "Discounted" },
+      ],
+    },
+    {
+      name: "Type",
+      value: [{ name: "Apartment" }, { name: "Condo" }, { name: "Townhouse" }],
+    },
+  ],
+  forRent: [
+    {
+      name: "status",
+      value: [
+        { name: "Available" },
+        { name: "Occupied" },
+        { name: "Reserved" },
+      ],
+    },
+    {
+      name: "Labels",
+      value: [
+        { name: "Short Term" },
+        { name: "Long Term" },
+        { name: "Furnished" },
+      ],
+    },
+    {
+      name: "Type",
+      value: [{ name: "Villa" }, { name: "Studio" }, { name: "Penthouse" }],
+    },
+  ],
+};
+
+export const aboutDetails = {
+  homeSold: "0K",
+  happyClients: "0K",
+  satisfactionRate: "0K",
+};

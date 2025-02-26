@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
 import {
   Select,
   SelectContent,
@@ -10,16 +7,29 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import Link from "next/link";
+import { countries, navDropdownData } from "@/lib/data";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@radix-ui/react-dropdown-menu";
 import Image from "next/image";
-import { countries } from "@/lib/data";
+import Link from "next/link";
+import { useState } from "react";
+import { BiSearch } from "react-icons/bi";
+import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { IoIosArrowDown, IoMdMail } from "react-icons/io";
+import { Button } from "./ui/button";
+import { RiArrowRightUpFill } from "react-icons/ri";
 
 const Navbar = () => {
+  // State to manage selected country in dropdown
   const [selectedCountry, setSelectedCountry] = useState(countries[0].name);
 
   return (
-    <nav>
-      {/* Top navigation bar */}
+    <nav className="320p:hidden 640p:block">
+      {/* Top navigation bar with contact info and country selector */}
       <div className="padding-x bg-[#737373] text-background h-[55px] flex justify-between items-center tracking-wide">
         {/* Left section: Contact Information */}
         <div className="left flex gap-4">
@@ -29,7 +39,7 @@ const Navbar = () => {
             <p>housebox@gmail.com</p>
           </div>
 
-          <div className="border border-secondary h-[22px]"></div>
+          <div className="ceperator"></div>
 
           {/* Phone */}
           <div className="flex gap-2">
@@ -37,7 +47,7 @@ const Navbar = () => {
             <p>(234) 345-4574</p>
           </div>
 
-          <div className="border-[0.25px] border-secondary h-[22px]"></div>
+          <div className="ceperator"></div>
 
           {/* Location */}
           <div className="flex gap-2">
@@ -53,7 +63,7 @@ const Navbar = () => {
             value={selectedCountry}
             onValueChange={(value) => setSelectedCountry(value)}
           >
-            <SelectTrigger className="w-[100px] bg-transparent text-background outline-none border-none hover:outline-[1px] duration-150 px-0 text-xl rounded-sm">
+            <SelectTrigger className="w-[100px] bg-transparent text-background outline-none border-none duration-150 px-0 text-xl rounded-sm">
               <SelectValue placeholder="Select Country " />
             </SelectTrigger>
             <SelectContent className="bg-white text-black">
@@ -63,10 +73,12 @@ const Navbar = () => {
                   value={country.name}
                   className="flex items-center gap-4 text-xl"
                 >
-                  <img
+                  <Image
                     src={country.flag}
                     alt="flag"
-                    className="w-7 h-7 inline-block mr-3"
+                    width={30}
+                    height={30}
+                    className="inline-block mr-3"
                   />
                   {country.name}
                 </SelectItem>
@@ -74,7 +86,7 @@ const Navbar = () => {
             </SelectContent>
           </Select>
 
-          <div className="border border-secondary h-[22px]"></div>
+          <div className="ceperator"></div>
 
           {/* Sign In Link */}
           <div>
@@ -83,7 +95,9 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Main Navigation Bar */}
       <div className="padding-x h-[90px] flex items-center justify-between">
+        {/* Logo Section */}
         <div className="flex items-center justify-center gap-2">
           <Image src={"/logo.png"} width={55.8} height={51} alt="logo" />
           <p className="text-2xl text-primary-foreground font-bold tracking-wide">
@@ -91,7 +105,52 @@ const Navbar = () => {
           </p>
         </div>
 
-        <div></div>
+        {/* Navigation Menu with Dropdowns */}
+        <div className="flex gap-2">
+          {navDropdownData.map((dropdown) => (
+            <DropdownMenu key={dropdown.name}>
+              <DropdownMenuTrigger className="bg-transparent text-primary-foreground border-none px-3 py-1 rounded-sm outline-none cursor-pointer font-semibold tracking-wide flex items-center justify-center gap-1">
+                {dropdown.name}
+                <IoIosArrowDown />
+              </DropdownMenuTrigger>
+
+              {/* Dropdown Menu Content */}
+              <DropdownMenuContent className="bg-white text-primary-foreground text-xl space-y-1 rounded-tr-[10px] rounded-bl-[10px] border border-secondary shadow-sm shadow-primary-foreground">
+                {dropdown.item.map((item, i) => (
+                  <DropdownMenuItem
+                    key={item.link}
+                    className={`outline-none hover:bg-primary hover:text-secondary-foreground  ${
+                      i === 0 ? "rounded-tr-[10px]" : "rounded-none"
+                    } ${
+                      i === dropdown.item.length - 1
+                        ? "rounded-bl-[10px]"
+                        : "rounded-none"
+                    }`}
+                  >
+                    <a href={item.link} className="text-lg px-4 outline-none ">
+                      {item.name}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ))}
+        </div>
+
+        {/* Search & View Listing Button */}
+        <div className="text-primary-foreground flex items-center justify-center gap-4">
+          {/* Search Icon */}
+          <div>
+            <BiSearch size={30} />
+          </div>
+          <div className="ceperator h-[30px]"></div>
+
+          {/* View Listing Button */}
+          <Button className="flex items-center justify-center text-secondary-foreground px-6 py-7 text-base gap-3 hover:bg-primary-foreground">
+            <p>View Listing</p>
+            <RiArrowRightUpFill className="inline-block w-10 h-10" />
+          </Button>
+        </div>
       </div>
     </nav>
   );
