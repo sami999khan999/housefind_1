@@ -18,7 +18,7 @@ const Hero = () => {
     <div className="bg-hero bg-cover bg-center flex items-center flex-col top-0">
       {/* Spacer for large screens */}
 
-      <div className="640p:mt-[10%] 320p:mt-8 h-fit mb-[4rem] flex flex-col items-center w-full">
+      <div className="padding-x 640p:mt-[10%] 320p:mt-8 h-fit mb-[4rem] flex flex-col items-center">
         {/* Heading section */}
         <h1 className="!text-background text-lg 640p:text-2xl bg-white/15 backdrop-blur-sm px-4 py-1 rounded-md font-normal tracking-wide text-opacity-10">
           Discover Your Ideal Property Today!
@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
 
         {/* Main content wrapper for select category and search options */}
-        <div className="flex flex-col items-center 640p:items-start w-full padding-x mt-4">
+        <div className="flex flex-col items-center 640p:items-start w-full mt-4">
           {/* Select Category (For Sale / For Rent) */}
           <div>
             <div className="w-full flex items-center">
