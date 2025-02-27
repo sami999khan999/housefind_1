@@ -7,11 +7,11 @@ import FreturedProduction from "@/components/FreturedProduction";
 import Hero from "@/components/Hero";
 import PropertyLocation from "@/components/PropertyLocation";
 import { StepsToBuy } from "@/components/StepsToBuy";
-import React from "react";
+import React, { Suspense } from "react";
 
 const page = () => {
   return (
-    <div className="">
+    <Suspense fallback={<div>Loading...</div>}>
       <Hero />
       <About />
       <FreturedProduction />
@@ -21,7 +21,7 @@ const page = () => {
       <FeedBack />
       <Experts />
       <Footer />
-    </div>
+    </Suspense>
   );
 };
 
