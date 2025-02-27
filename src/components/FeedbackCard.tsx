@@ -34,7 +34,7 @@ const FeedbackCard = ({
 
         {/* Feedback Text */}
         <p className="text-[18px] 640p:text-[24px] line-clamp-3">
-          "{feedback}"
+          {`"${feedback}"`}
         </p>
 
         {/* Profile & Google Logo */}
