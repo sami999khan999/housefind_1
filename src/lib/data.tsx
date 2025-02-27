@@ -208,7 +208,7 @@ export const feedbackData = [
   {
     name: "Michael Williams",
     feedback:
-      "I've used several real estate services before, but none compare to this. The seamless experience and detailed property insights make a huge difference!",
+      "I have used several real estate services before, but none compare to this. The seamless experience and detailed property insights make a huge difference!",
   },
   {
     name: "Sophia Martinez",
