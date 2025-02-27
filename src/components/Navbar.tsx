@@ -22,6 +22,7 @@ import { IoIosArrowDown, IoMdMail } from "react-icons/io";
 import { Button } from "./ui/button";
 import { RiArrowRightUpFill } from "react-icons/ri";
 import { countries, navDropdownData } from "@/lib/data";
+import Logo from "./Logo";
 
 const Navbar = () => {
   // State to manage selected country in dropdown
@@ -97,14 +98,7 @@ const Navbar = () => {
 
       {/* Main Navigation Bar */}
       <div className="padding-x h-[90px] flex items-center justify-between">
-        {/* Logo Section */}
-        <div className="flex items-center justify-center gap-2">
-          <Image src={"/logo.png"} width={55.8} height={51} alt="logo" />
-          <p className="text-2xl text-primary-foreground font-bold tracking-wide">
-            HOUSEFIND
-          </p>
-        </div>
-
+        <Logo />
         {/* Navigation Menu with Dropdowns */}
         <div className="flex gap-2 z-50">
           {navDropdownData.map((dropdown) => (

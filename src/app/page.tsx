@@ -1,6 +1,8 @@
 import About from "@/components/About";
 import BestFeaturedItems from "@/components/BestFeaturedItems";
+import Experts from "@/components/Experts";
 import FeedBack from "@/components/FeedBack";
+import Footer from "@/components/Footer";
 import FreturedProduction from "@/components/FreturedProduction";
 import Hero from "@/components/Hero";
 import PropertyLocation from "@/components/PropertyLocation";
@@ -17,6 +19,8 @@ const page = () => {
       <BestFeaturedItems />
       <PropertyLocation />
       <FeedBack />
+      <Experts />
+      <Footer />
     </div>
   );
 };

@@ -22,7 +22,7 @@
 
     --secondary: 179, 79%, 13%; /* hsl(179, 79%, 13%)*/
 
-    --secondary-foreground: 180, 4%, 95%; /* hsl(180, 4%,75%) */
+    --secondary-foreground: 180, 4%, 95%; /* hsl(180, 4%,90%) */
 
     --muted: 0, 0%, 22%; /*hsl(0, 0%, 18%) */
 
@@ -136,8 +136,6 @@
     @apply border-[0.25px] border-[#224F4E]/40 h-[22px];
   }
 }
-
-
 
 @layer base {
   * {

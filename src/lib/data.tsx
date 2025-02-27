@@ -198,6 +198,7 @@ export const propertyLocationData = [
   { location: "Las Vegas", properties: 62 },
   { location: "Denver", properties: 54 },
 ];
+
 export const feedbackData = [
   {
     name: "Emily Johnson",
@@ -218,5 +219,24 @@ export const feedbackData = [
     name: "Daniel Lee",
     feedback:
       "Highly recommended! The filtering options are top-notch, and I appreciate how quickly I could connect with sellers.",
+  },
+];
+
+export const expertData = [
+  {
+    name: "Henry Nicolas",
+    position: "CEO",
+  },
+  {
+    name: "Sophia Martinez",
+    position: "CMO",
+  },
+  {
+    name: "James Anderson",
+    position: "Head of Product",
+  },
+  {
+    name: "Olivia Thompson",
+    position: "Lead Engineer",
   },
 ];
