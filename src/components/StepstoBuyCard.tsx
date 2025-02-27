@@ -12,7 +12,7 @@ const StepstoBuyCard = ({ btnText }: { btnText: string }) => {
         alt="steps-to-but"
       />
 
-      <Button className="bg-background text-primary-foreground text-lg 640p:text-2xl px-8 py-7 my-4">
+      <Button className="bg-background text-primary-foreground text-lg 640p:text-2xl px-8 py-7 my-4 hover:bg-primary-foreground hover:text-background">
         {btnText}
       </Button>
     </div>

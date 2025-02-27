@@ -30,7 +30,7 @@ const BestFeaturedItemCard: React.FC<BestFeaturedItemCardProps> = ({
         </p>
       </div>
 
-      <Button className="w-fit text-foreground py-7 text-base">
+      <Button className="w-fit text-foreground py-7 text-base hover:bg-primary-foreground hover:text-background">
         Schedule Visit <RiArrowRightUpFill size={20} />
       </Button>
     </div>

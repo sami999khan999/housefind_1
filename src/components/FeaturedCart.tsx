@@ -19,12 +19,12 @@ type Property = {
 
 const FeaturedCart = ({ item }: { item: Property }) => {
   return (
-    <div className="">
+    <div className="w-full">
       <div className="rounded-t-2xl overflow-hidden relative">
         <Image
           src={"/featured-card-img.png"}
           width={416}
-          height={303.55999755859375}
+          height={303}
           alt="card-img"
           className="w-full"
         />

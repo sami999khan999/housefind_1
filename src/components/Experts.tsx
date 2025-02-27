@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 
 const Experts = () => {
   return (
-    <div className="padding-x h-fit 640p:h-[110vh] relative">
+    <div className="padding-x h-fit 1080p:h-[110vh] 640p:h-[157vh] relative">
       <div className="flex items-center flex-col mt-[5rem]">
         <Heading>Experts Behind HouseBox</Heading>
         <h1 className="text-primary-foreground 640p:w-[30rem] text-[30px] 640p:text-[44px] font-semibold text-center mt-4">
@@ -14,7 +14,7 @@ const Experts = () => {
         </h1>
       </div>
 
-      <div className="flex flex-col 640p:flex-row gap-6 640p:gap-0 justify-between mt-10 640p:pb-[10rem] pb-[4rem]">
+      <div className="flex flex-col 640p:flex-row gap-6 1080p:gap-0 justify-between mt-10 640p:pb-[10rem] pb-[4rem]">
         {expertData.map((item, i) => (
           <ExpertsCard {...item} key={i} />
         ))}

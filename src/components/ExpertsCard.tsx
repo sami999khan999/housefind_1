@@ -15,7 +15,7 @@ const ExpertsCard = ({
         <div className="flex items-center justify-center">
           <Image src="/experts.png" alt="expert" width={330} height={360} />
         </div>
-        <div className="absolute text-background bg-primary-foreground h-12 w-12 rounded-full flex items-center justify-center 640p:bottom-4 640p:right-4 bottom-6 right-8">
+        <div className="absolute text-background bg-primary-foreground h-12 w-12 rounded-full flex items-center justify-center 640p:bottom-4 640p:right-4 bottom-6 right-8 cursor-pointer">
           <IoShareSocialSharp size={22} />
         </div>
       </div>

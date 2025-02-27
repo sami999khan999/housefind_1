@@ -64,10 +64,10 @@ const Navbar = () => {
             value={selectedCountry}
             onValueChange={(value) => setSelectedCountry(value)}
           >
-            <SelectTrigger className="w-[100px] bg-transparent text-background outline-none border-none duration-150 px-0 text-xl rounded-sm">
+            <SelectTrigger className="w-[100px] bg-transparent text-background outline-none border-none duration-150 px-0 text-xl rounded-sm ">
               <SelectValue placeholder="Select Country " />
             </SelectTrigger>
-            <SelectContent className="bg-white text-black">
+            <SelectContent className="bg-white text-primary-foreground">
               {countries.map((country) => (
                 <SelectItem
                   key={country.name}
@@ -103,7 +103,7 @@ const Navbar = () => {
         <div className="flex gap-2 z-50">
           {navDropdownData.map((dropdown) => (
             <DropdownMenu key={dropdown.name}>
-              <DropdownMenuTrigger className="bg-transparent text-primary-foreground border-none px-3 py-1 rounded-sm outline-none cursor-pointer font-semibold tracking-wide flex items-center justify-center gap-1">
+              <DropdownMenuTrigger className="bg-transparent text-primary-foreground border-none px-3 py-1 rounded-sm outline-none cursor-pointer font-semibold tracking-wide flex items-center justify-center gap-1 hover:bg-foreground duration-100">
                 {dropdown.name}
                 <IoIosArrowDown />
               </DropdownMenuTrigger>

@@ -7,7 +7,7 @@ import { RiArrowRightUpFill } from "react-icons/ri";
 
 const About = () => {
   return (
-    <div className="padding-x 640p:h-full 1080p:h-[85vh] flex flex-col 640p:flex-row mt-[4rem] 1080p:mt-[10rem]">
+    <div className="padding-x 640p:h-full 1080p:h-[85vh] flex flex-col 640p:flex-row mt-[4rem] 640p:mt-[10rem]">
       <div className="640p:w-[60%] 640p:flex hidden ">
         <div className="bg-about bg-cover bg-center 640p:h-[508px] 640p:w-[508px] 1080p:h-[636px] 1080p:w-[636px] relative ">
           <Image
