@@ -203,12 +203,12 @@ export const feedbackData = [
   {
     name: "Emily Johnson",
     feedback:
-      "This platform has completely transformed the way I manage my real estate listings. The user interface is intuitive, and the support team is always ready to help!",
+      "This platform has completely transformed the way I manage my real estate listings. The user interface is intuitive, and the support team is always ready to help.",
   },
   {
     name: "Michael Williams",
     feedback:
-      "I have used several real estate services before, but none compare to this. The seamless experience and detailed property insights make a huge difference!",
+      "I have used several real estate services before, but none compare to this. The seamless experience and detailed property insights make a huge difference.",
   },
   {
     name: "Sophia Martinez",
