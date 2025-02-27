@@ -163,3 +163,24 @@ export const featuredCardData = [
     facilities: { bed: 10, bath: 12, area: 1500 },
   },
 ];
+
+export const bestFeaturedItemData = [
+  {
+    title: "Moon Light Villa",
+    location: "60002 Just Mead East Alfonso",
+    price: 1900000,
+    priceAfterDiscount: 1800000,
+  },
+  {
+    title: "Sunset Bay Mansion",
+    location: "405 Ocean Drive, Miami Beach, FL",
+    price: 2500000,
+    priceAfterDiscount: 2350000,
+  },
+  {
+    title: "Royal Garden Estate",
+    location: "78 King’s Avenue, Beverly Hills, CA",
+    price: 3200000,
+    priceAfterDiscount: 3100000,
+  },
+];

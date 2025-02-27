@@ -105,9 +105,22 @@
   }
 }
 
+/* Add this to your global styles or component */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
+
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring/50 font-mono;
   }
   body {
     @apply bg-background text-foreground;
@@ -121,5 +134,16 @@
 
   .ceperator {
     @apply border-[0.25px] border-[#224F4E]/40 h-[22px];
+  }
+}
+
+
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }

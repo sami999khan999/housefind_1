@@ -24,7 +24,7 @@ const FreturedProduction = () => {
 
       <div className="flex flex-col 640p:flex-row w-full justify-between mt-16 gap-5">
         {featuredCardData.map((item, i) => (
-          <FeaturedCart item={item} />
+          <FeaturedCart key={i} item={item} />
         ))}
       </div>
     </div>

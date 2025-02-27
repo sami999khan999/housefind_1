@@ -21,9 +21,9 @@ const Hero = () => {
 
       <div className="640p:mt-[10%] 320p:mt-8 h-fit mb-[4rem] flex flex-col items-center w-full">
         {/* Heading section */}
-        <Heading className="text-background text-lg 640p:text-2xl bg-white/15 backdrop-blur-sm px-4 py-1 rounded-md font-semibold tracking-wide text-opacity-10">
+        <h1 className="!text-background text-lg 640p:text-2xl bg-white/15 backdrop-blur-sm px-4 py-1 rounded-md font-normal tracking-wide text-opacity-10">
           Discover Your Ideal Property Today!
-        </Heading>
+        </h1>
 
         <h1 className="text-[40px] text-center 640p:text-[70px] font-semibold tracking-wide text-background">
           Find Your Dream Home

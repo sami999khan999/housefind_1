@@ -106,7 +106,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Menu with Dropdowns */}
-        <div className="flex gap-2">
+        <div className="flex gap-2 z-50">
           {navDropdownData.map((dropdown) => (
             <DropdownMenu key={dropdown.name}>
               <DropdownMenuTrigger className="bg-transparent text-primary-foreground border-none px-3 py-1 rounded-sm outline-none cursor-pointer font-semibold tracking-wide flex items-center justify-center gap-1">

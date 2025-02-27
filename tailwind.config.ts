@@ -65,6 +65,10 @@ export default {
         hero: "url('/hero-img.png')",
         about: "url('/about/image-1.png')",
       },
+      fontFamily: {
+        sans: "var(--font-inter-sans)",
+        mono: "var(--font-figtree-mono)",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

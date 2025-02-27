@@ -62,7 +62,7 @@ const FeaturedCart = ({ item }: { item: Property }) => {
         <div className="border-t my-8"></div>
 
         <div className="flex justify-between items-center">
-          <Button className="text-foreground text-[16px] tracking-wide font-normal px-6 hover:bg-primary-foreground hover:text-secondary-foreground">
+          <Button className="text-foreground text-[16px] font-normal px-6 hover:bg-primary-foreground hover:text-secondary-foreground tracking-wider">
             ${formatNumber(item.price)}
           </Button>
           <div className="text-primary-foreground w-10 flex items-center justify-center aspect-square rounded-full bg-slate-300">
