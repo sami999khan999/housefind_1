@@ -7,7 +7,7 @@ import { RiArrowRightUpFill } from "react-icons/ri";
 
 const Experts = () => {
   return (
-    <div className="padding-x h-[110vh] relative">
+    <div className="padding-x h-fit 640p:h-[110vh] relative">
       <div className="flex items-center flex-col mt-[5rem]">
         <Heading>Experts Behind HouseBox</Heading>
         <h1 className="text-primary-foreground 640p:w-[30rem] text-[30px] 640p:text-[44px] font-semibold text-center mt-4">

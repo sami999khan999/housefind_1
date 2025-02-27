@@ -22,7 +22,7 @@ const BestFeaturedItems = () => {
         <h1 className="text-[30px] 640p:text-[48px] w-[20rem] font-semibold text-background leading-tight">
           Our Featured Items
         </h1>
-        <p className="w-fit 640p:w-[25rem] text-background">
+        <p className="w-fit 640p:w-[25rem] text-background text-center 640p:text-left">
           At HouseBox, we’re redefining the way peoples find, sell, and invest
           in properties, our mission.
         </p>
