@@ -9,7 +9,7 @@ const Heading = ({
 }) => {
   return (
     <div
-      className={`bg-foreground text-secondary w-fit px-4 py-2 text-[18px] font-medium rounded-sm h-fit !${className} `}
+      className={`capitalize bg-foreground text-secondary w-fit px-4 py-2 text-[18px] font-medium rounded-sm h-fit !${className} `}
     >
       {children}
     </div>

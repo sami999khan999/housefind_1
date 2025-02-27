@@ -184,3 +184,39 @@ export const bestFeaturedItemData = [
     priceAfterDiscount: 3100000,
   },
 ];
+
+export const propertyLocationData = [
+  { location: "New York", properties: 95 },
+  { location: "Los Angeles", properties: 88 },
+  { location: "Chicago", properties: 76 },
+  { location: "Houston", properties: 92 },
+  { location: "Miami", properties: 67 },
+  { location: "San Francisco", properties: 59 },
+  { location: "Dallas", properties: 83 },
+  { location: "Seattle", properties: 71 },
+  { location: "Boston", properties: 78 },
+  { location: "Las Vegas", properties: 62 },
+  { location: "Denver", properties: 54 },
+];
+export const feedbackData = [
+  {
+    name: "Emily Johnson",
+    feedback:
+      "This platform has completely transformed the way I manage my real estate listings. The user interface is intuitive, and the support team is always ready to help!",
+  },
+  {
+    name: "Michael Williams",
+    feedback:
+      "I've used several real estate services before, but none compare to this. The seamless experience and detailed property insights make a huge difference!",
+  },
+  {
+    name: "Sophia Martinez",
+    feedback:
+      "Absolutely love the design and ease of use! I was able to find my dream home within days, thanks to the smart recommendations.",
+  },
+  {
+    name: "Daniel Lee",
+    feedback:
+      "Highly recommended! The filtering options are top-notch, and I appreciate how quickly I could connect with sellers.",
+  },
+];

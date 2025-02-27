@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import BestFeaturedItems from "@/components/BestFeaturedItems";
+import FeedBack from "@/components/FeedBack";
 import FreturedProduction from "@/components/FreturedProduction";
 import Hero from "@/components/Hero";
 import PropertyLocation from "@/components/PropertyLocation";
@@ -15,6 +16,7 @@ const page = () => {
       <StepsToBuy />
       <BestFeaturedItems />
       <PropertyLocation />
+      <FeedBack />
     </div>
   );
 };
