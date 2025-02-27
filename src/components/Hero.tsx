@@ -1,14 +1,13 @@
 "use client";
 
+import { searchParamaData } from "@/lib/data";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { CiSearch } from "react-icons/ci";
 import { MdOutlineDashboardCustomize } from "react-icons/md";
 import { RiArrowRightUpFill } from "react-icons/ri";
 import SearchParamSelect from "./SearchParamSelect";
-import Heading from "./shared/Heading";
 import { Button } from "./ui/button";
-import { searchParamaData } from "@/lib/data";
 
 const Hero = () => {
   const searchParams = useSearchParams();

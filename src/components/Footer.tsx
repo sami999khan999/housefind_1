@@ -22,8 +22,8 @@ const Footer = () => {
         <div className="flex flex-col items-center 640p:items-start text-center 640p:text-left gap-5">
           <Logo />
           <p className="w-[20rem] text-primary-foreground text-lg">
-            As HouseBox's lead negotiator, Chris brings years of experience in
-            securing the best deals both.
+            {`As HouseBox's lead negotiator, Chris brings years of experience in
+            securing the best deals both.`}
           </p>
           <div className="text-primary-foreground flex gap-4 w-full justify-center 640p:justify-start">
             <Link

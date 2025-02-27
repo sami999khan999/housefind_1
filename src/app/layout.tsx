@@ -1,8 +1,8 @@
-import type { Metadata } from "next";
-import { Geist, Figtree, Inter, Karla } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
 import MobileNav from "@/components/MobileNav";
+import Navbar from "@/components/Navbar";
+import type { Metadata } from "next";
+import { Figtree, Inter } from "next/font/google";
+import "./globals.css";
 
 const interSans = Inter({
   variable: "--font-inter-sans",

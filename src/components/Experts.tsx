@@ -1,9 +1,8 @@
-import React from "react";
-import Heading from "./shared/Heading";
 import { expertData } from "@/lib/data";
-import ExpertsCard from "./ExpertsCard";
-import { Button } from "./ui/button";
 import { RiArrowRightUpFill } from "react-icons/ri";
+import ExpertsCard from "./ExpertsCard";
+import Heading from "./shared/Heading";
+import { Button } from "./ui/button";
 
 const Experts = () => {
   return (
@@ -27,8 +26,8 @@ const Experts = () => {
             Step Into Your Dream Home with HouseBox
           </h2>
           <p className="text-foreground 640p:w-[32rem] tracking-wide text-center 640p:text-left">
-            At HouseBox, we believe your next home is more than just a place -
-            it's where your future begins you're buy.
+            {`At HouseBox, we believe your next home is more than just a place -
+            it's where your future begins you're buy.`}
           </p>
         </div>
         <div className="flex items-center justify-center">

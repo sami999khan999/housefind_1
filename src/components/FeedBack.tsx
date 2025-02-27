@@ -1,6 +1,6 @@
-import React from "react";
+import { feedbackData } from "@/lib/data";
+import FeedbackCard from "./FeedbackCard";
 import Heading from "./shared/Heading";
-import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -8,8 +8,6 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "./ui/carousel";
-import FeedbackCard from "./FeedbackCard";
-import { feedbackData } from "@/lib/data";
 
 const FeedBack = () => {
   return (
