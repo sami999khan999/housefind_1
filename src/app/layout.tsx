@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Figtree, Inter, Karla } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import MobileNav from "@/components/MobileNav";
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${interSans.variable} ${figtreeMono.variable} antialiased `}
       >
         <Navbar />
+        <MobileNav />
         {children}
       </body>
     </html>
