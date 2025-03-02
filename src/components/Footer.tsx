@@ -59,7 +59,7 @@ const Footer = () => {
             <h2 className="text-2xl text-primary-foreground font-bold tracking-wide">
               Quick Links
             </h2>
-            <div className="text-[16px] text-primary-foreground tracking-wide space-y-4 font-medium mt-4">
+            <div className="text-[16px] text-primary-foreground tracking-wide space-y-4 font-medium mt-4 cursor-pointer">
               <p>Home</p>
               <p>Listing</p>
               <p>Properties</p>
@@ -75,16 +75,16 @@ const Footer = () => {
             </h2>
             <div className="text-[16px] text-primary-foreground tracking-wide space-y-4 font-medium mt-4">
               <div className="flex items-center justify-center 640p:justify-start gap-3">
-                <FaPhoneAlt size={20} /> Home
+                <FaPhoneAlt size={20} /> +1 123 456 7890
               </div>
               <div className="flex items-center justify-center 640p:justify-start gap-3">
-                <FaLocationDot size={20} /> Listing
+                <FaLocationDot size={20} /> 421 Allen, Mexico 4233
               </div>
               <div className="flex items-center justify-center 640p:justify-start gap-3">
-                <IoMdMail size={20} /> Properties
+                <IoMdMail size={20} /> houseboxesate@com
               </div>
               <div className="flex items-center justify-center 640p:justify-start gap-3">
-                <FaEarthAfrica size={20} /> Our Blog
+                <FaEarthAfrica size={20} /> houseboxesate.com
               </div>
             </div>
           </div>

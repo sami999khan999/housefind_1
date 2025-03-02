@@ -22,7 +22,7 @@ const FeedbackCard = ({
       </div>
 
       {/* Feedback Content */}
-      <div className="bg-background rounded-2xl p-6 640p:p-10 w-full 640p:w-[60%] text-primary-foreground border space-y-4 640p:space-y-6">
+      <div className="bg-background rounded-2xl p-6 640p:p-10 w-full 640p:w-[60%] border space-y-4 640p:space-y-6">
         {/* Logo */}
         <Image
           src={"/feedback-logo.png"}
